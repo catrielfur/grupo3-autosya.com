@@ -31,3 +31,7 @@ Elegimos el tema de una página de autos porque presenta un producto que en este
 =======
 # grupo3-autosya.com
 >>>>>>> 28fdf9f4c376b380f9b073e0d9d5620453368294
+
+Tablero de Trello:
+
+https://trello.com/b/8ln4UpAT
