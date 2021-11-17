@@ -281,6 +281,15 @@ input {
     text-align: center;
 }
 
+.logo2 {
+    width: 200px;
+}
+
+.top-header-register {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Width superiores son para tablet */
 @media (min-width: 361px){
     main section article .description{
