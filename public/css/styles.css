@@ -1,0 +1,429 @@
+
+/* Arreglos generales para toda la página */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a0a0a0;
+    font-family: 'Roboto', 'sans-serif';
+    width: 100%;
+}
+/* Titulares */
+h3 {
+    font-family: var(--font-title),var(--font-fallback-sans-serif);
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--font-title),var(--font-fallback-sans-serif);
+    font-size: 25px;
+    text-align: center;
+}
+/* Cuerpo de texto */
+p {
+    font-size: 12px;
+}
+
+/* Centra la hamburguesa */
+.burger-menu{
+    text-align: center;
+}
+
+/* Le da estilos a la hamburguesa */
+.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: auto;
+    padding: 10px;
+    max-width: 50px;
+    display: block;
+}
+
+div.top-header {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header {
+    background-color: #d72323;
+    padding: 20px;
+}
+
+.main-header-top-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+   align-items: center;
+   font-weight: 800;
+ 
+}
+
+
+.copy-header {
+    font-size: 12px;
+    font-weight: 400;
+    text-align:center;
+    flex-wrap: nowrap;
+    padding: 20px;
+}
+
+header .form{
+    display: flex;
+    align-items: center;¡
+    /* No se si se tiene que ver o no */
+    /* display: none; */
+
+}
+
+header .form .input {
+    background-color: white;
+    border-top: 1px solid rgb(207, 206, 206);
+    border-left: 1px solid rgb(207, 206, 206);
+    border-bottom: 1px solid rgb(207, 206, 206);
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+}
+
+header .form i {
+    border-top: 1px solid rgb(207, 206, 206);
+    border-right: 1px solid rgb(207, 206, 206);
+    border-bottom: 1px solid rgb(207, 206, 206);
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    padding: 13px 13px 10px 0;
+    background-color: white;
+    color: rgb(177, 174, 174);
+}
+
+header .logo{
+    padding: 0px;
+    width: 50%;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+header nav{
+    display: block;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+/* Sirve para quitarle los puntos a los ul */
+header ul li{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+/* Para ocultar la barra en mobile */
+.main-navbar{
+    display: none;
+}
+
+/* Le da color a las letras del nav */
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30px;
+}
+
+.discount{
+    width: 60%;
+}
+
+.discount, .description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+.banner {
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+/* Le da color verde al camión y al descuento */
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute; 
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+main section div.products article i{
+    transition: transform 1s;
+}
+
+main section div.products article:hover i{
+    transform: rotate(-90deg);
+}
+
+/* Con esto acomodo el camión a la derecha abajo */
+article div.main-article{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(0, 0, 0) ;
+
+}
+
+footer i {
+    color: blue;
+    font-size: 2em;
+    padding: 0 0 30px 0;  
+}
+
+.bannerHuellas {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+}
+
+.logos {
+    display: flex;
+}
+
+.datos {
+    display: flex;
+   justify-content: space-evenly;
+   text-align: center;
+   color: #FFF;
+}
+
+/* Width superiores son para tablet */
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+
+    .main-navbar{
+        display: contents;
+    }
+
+    header .logo {
+        width: 30%;
+    }
+
+    header .form .input {
+        width: 30%;
+    }
+
+    h2.copy-header {
+        width: 30%;
+        display: flex;
+    
+    }
+
+    .main-header-top-bar {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 0 10px 0;
+    }
+
+    .main-navbar ul {
+        display: flex;
+        font-size: 10px;
+            
+    }
+
+    .main-navbar li {
+     margin: 0 5px;
+    }
+}
+/* Width superiores son para laptop */
+@media (min-width: 768px){
+
+    .logo {
+        width: 200px;
+        margin: 15px;
+    }
+
+    .main-header-top-bar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+
+    }
+
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .burger-menu {
+        display: none;
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+     margin: 0 5px;
+    }
+
+    header .form{
+        display: flex;
+        align-items: center;
+        /* No se si se tiene que ver o no */
+        display: flex;
+    
+    }
+
+    main section div.products article{
+        width: 22%;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .logo {
+        width: 250px;
+    }
+
+
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .main-header-top-bar {
+        align-items: center;
+    }
+
+    .form {
+        margin: auto;
+    }
+
+    .main-navbar {
+        margin-top: 20px;
+       }
+
+    .main-navbar li {
+        margin: 0 10px;
+       }
+
+    .main-navbar a {
+       font-size: 20px;
+       }
+
+    .copy-header {
+        max-width: none;
+        font-size: 22px;
+        margin: 0;
+        
+    }
+
+    main section div.products article {
+        width: 18%;
+        display: inline-block;
+        justify-content: space-between;
+       margin: 0 30px;
+    }
+}
+    

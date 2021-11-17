@@ -1,0 +1,22 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD\r Breve descripción:\r Esta página está orientada a la compra-venta de autos nuevos y usados.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catrielfur/grupo3-autosya.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catrielfur/grupo3-autosya.com/issues"
+  },
+  "homepage": "https://github.com/catrielfur/grupo3-autosya.com#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
