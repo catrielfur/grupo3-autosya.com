@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>AutoYA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="top-header">
+                <div class="logo"> 
+                    <img src="/images/logo-AUTOYA.png" class = "logo">
+                </div>
+            </div>
+            
+        </header>
+        <main class="register">
+            <form action="/" method="POST">
+                <input type="text" name="name" placeholder="Nombre y apellido">
+                <input type="text" name="user" placeholder="Nombre de usuario">
+                <input type="email" name="email" placeholder="E-mail">
+                <br>
+                <label for="birth_date"><b>Fecha de nacimiento</b></label>
+                <br>
+                <input type="date" name="birth_date" id="birth_date">
+                <br>
+                <input type="text" name="addres" placeholder="Domicilio">
+                <h4>Perfil del usuario</h4>
+                <div class="profile">
+                    <input type="radio" name="profile" value="buy" id="buy">
+                    <label for="buy">Comprador</label>
+                    <input type="radio" name="profile" value="sell" id="sell">
+                    <label for="sell">Vendedor</label>
+                </div>
+
+                <h4>Intereses</h4>
+                <div class="interests">
+                    <div>
+                        <input type="checkbox" name="interests" value="a" id="a">
+                        <label for="a">Autos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="b" id="b">
+                        <label for="b">Camionetas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="c" id="c">
+                        <label for="c">Accesorios</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="d" id="d">
+                        <label for="d">Protección antibandálica</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="e" id="e">
+                        <label for="e">Seguros contra todo riesgo</label>
+                    </div>
+                </div>
+                
+                <h4>Elegí tu foto de usuario</h4>
+                <input type="file" name="avatar">
+                <br>
+                <br>
+                <input type="password" name="pass" placeholder="Elegí tu contraseña">
+                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+                <br>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+                <br>
+                <br>
+            </form>
+        </main>
+        <footer>
+            <article>
+                <h3>DONDE NOS ENCONTRAMOS</h3>
+                <p><img src="/images/croquis.png" class = "croquis"></p>
+            </article>
+            <div class= "datos">
+            <article>
+                <h3>DIRECCIÓN</h3>
+                <p>Los Ceibos 10, B1803, La Unión, Buenos Aires, Argentina.</p>
+                <p>Teléfono: (011) 7525-3000 Celular: +54 9 11 3427-5938</p>
+                <p>info@autoYA.com.ar</p>
+            </article>
+            <article>
+                <h3>HORARIOS</h3>
+                <p>Lunes a viernes: de 9 a 13hs y de 15 a 19hs
+                <p>Sábados: de 9 a 13hs</p>
+                <p>Domingos: Cerrado</p>
+            </article>
+            </div>
+
+            <p class= "Copyright"></p>Copyright © 1999-2020 AutoYA S.R.L.</p>
+        </footer>
+    </body>
+</html>
