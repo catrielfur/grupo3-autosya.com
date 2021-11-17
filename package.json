@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/catrielfur/grupo3-autosya.com/issues"
   },
-  "homepage": "https://github.com/catrielfur/grupo3-autosya.com#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "homepage": "https://github.com/catrielfur/grupo3-autosya.com#readme"
 }
