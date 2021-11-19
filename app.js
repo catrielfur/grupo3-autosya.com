@@ -29,3 +29,7 @@ app.get('/description', (req,res)=>{
     res.sendFile(__dirname + '/views/description.html');
 });
 
+app.get('/productcart', (req,res)=>{
+    res.sendFile(__dirname + '/views/productcart.html');
+});
+
