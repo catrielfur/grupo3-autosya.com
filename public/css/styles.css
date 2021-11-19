@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-color: #a0a0a0;
     font-family: 'Roboto', 'sans-serif';
@@ -289,6 +290,57 @@ input {
     display: flex;
     justify-content: space-between;
 }
+
+.headerDesc{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* /* Cambios para la descripción */
+.logos2 {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width:100px;
+    padding:15px;
+    width:30%;
+    
+}
+
+.info {
+    display: block;
+    box-sizing: border-box;
+    position:relative;
+    font-size: 50px;
+    align-items: center;
+}
+
+.ambos {
+    display: flex;
+    margin:0;
+    padding:0;
+}
+
+.banner4{
+    width: 100%;
+    display: inline-flex;
+    font-size: 1em;
+}
+
+.logo-garantia {
+    width: 8%;
+}
+
+.lineaDeAuto {
+    font-family: 'Roboto', 'sans-serif';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+}
+
 
 /* Width superiores son para tablet */
 @media (min-width: 361px){
