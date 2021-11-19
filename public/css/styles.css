@@ -118,7 +118,6 @@ header .form i {
 
 header .logo{
     padding: 0px;
-    width: 50%;
     border-bottom-left-radius: 20%;
     border-top-right-radius: 20%;
 }
@@ -263,6 +262,10 @@ footer i {
 
 .logos {
     display: flex;
+    width:100%;
+    margin:0;
+    padding:0;
+
 }
 
 .datos {
@@ -319,6 +322,13 @@ input {
     display: flex;
     margin:0;
     padding:0;
+}
+
+
+.banner3{
+    width: 100%;
+    display: inline-flex;
+    font-size: 1em;
 }
 
 .banner4{
