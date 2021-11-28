@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('../partials/head'); %>
+        <link rel="stylesheet" href="css/inicio_registro.css">
+        <link rel="stylesheet" href="css/contenedor_productos.css">
+</head>
+
+<body>
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <div id="mobile__menu" class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="#">Acerca de Nosotros</a>
+            <a href="/register">Registrarse</a>
+            <a href="/login">Ingresar</a>
+        </div>
+    </div>
+
+
+    <main>
+        <div class="signup-box">
+            <h1>Registrate!</h1>
+            <h4>Solo te tomara un par de minutos..</h4>
+            <form>
+                <label>Nombres</label>
+                <input type="text" placeholder="" />
+                <label>Apellidos</label>
+                <input type="text" placeholder="" />
+                <label>Correo Electronico</label>
+                <input type="email" placeholder="" />
+                <label>Contraseña</label>
+                <input type="password" placeholder="" />
+                <label>Confirmar Contraseña</label>
+                <input type="password" placeholder="" />
+                <input type="button" value="Registrarme" />
+            </form>
+            <p>
+                Al registrarte admites que eres mayor de edad??? <br />
+            </p>
+        </div>
+        <p class="para-2">
+            estas registrado? <a href="/login">Ingresa aqui!</a>
+        </p>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+
+</html>
