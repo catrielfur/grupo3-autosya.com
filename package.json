@@ -1,16 +1,32 @@
 {
-  "name": "clase20",
-  "version": "1.0.0",
-  "description": "",
-  "main": "./src/app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/app.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.1"
-  }
+    "name": "sprint2",
+    "version": "1.0.0",
+    "description": "**Integrantes:** JUAN CERON, CATRIEL FURQUET, BRUNO SEGURA, FRANCO GIORGI",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/catrielfur/grupo3-autosya.com"
+    },
+    "homepage": "http://hhhhh",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "ejs": "^3.1.6",
+        "express": "^4.17.2",
+        "express-validator": "^6.14.0",
+        "fs": "0.0.1-security",
+        "method-override": "^3.0.0",
+        "multer": "^1.4.4",
+        "nodemon": "^2.0.7",
+        "path": "^0.12.7"
+    },
+    "keywords": []
 }
