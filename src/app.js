@@ -29,3 +29,6 @@ app.get('/description', (req, res) => {
 app.get('/productcart', (req, res) => {
     res.render("products/productcart");
 });
+app.get('/products', (req, res) => {
+    res.render("products/products");
+});

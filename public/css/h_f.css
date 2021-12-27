@@ -1,0 +1,753 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: #24252a;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+}
+
+.nav__links li {
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+.cta {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+
+/* Mobile Nav */
+
+.menu {
+    display: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+    width: 100%;
+}
+
+.overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #0088a9;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+}
+
+.banner {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav__links,
+    .cta {
+        display: none;
+    }
+    .menu {
+        display: initial;
+    }
+}
+
+footer {
+    margin-top: 50px;
+    position: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #344a72;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.conta {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "cover content";
+    box-shadow: -2px 0px 33px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container-card {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+}
+
+.title-cards {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #7a7a7a;
+}
+
+.card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido-card {
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido-card h3 {
+    margin-bottom: 15px;
+    color: #7a7a7a;
+}
+
+.card .contenido-card p {
+    line-height: 1.8;
+    color: #6a6a6a;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card .contenido-card a {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
+}
+
+.card .contenido-card a:hover {
+    background: #2fb4cc;
+    color: #fff;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .container-card {
+        flex-wrap: wrap;
+    }
+    .card {
+        margin: 15px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+    background-color: #344a72;
+}
+
+.cover {
+    grid-area: cover;
+    height: 80vh;
+    background-image: url('/images/audi-A3.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.content {
+    grid-area: content;
+    background: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.nav {
+    margin: 10px 20px;
+    height: 40px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: gray;
+}
+
+.content-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.pages {
+    width: 20%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    color: gray;
+    position: relative;
+    transform: translateY(38px);
+}
+
+.pages span {
+    margin-top: 15px;
+}
+
+.black-label {
+    width: 80%;
+}
+
+.black-label p {
+    font-size: 13px;
+    color: gray;
+    width: 70%;
+}
+
+.title {
+    font-size: 64px;
+}
+
+.prix {
+    margin: 50px 0px;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    border-left: 4px solid rgb(255, 177, 33);
+}
+
+.prix span {
+    padding-left: 10px;
+}
+
+.crt {
+    color: gray;
+    left: 2px;
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+.active {
+    color: black;
+    position: relative;
+    transform: translateX(60px);
+}
+
+.active::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 67px;
+    right: 117%;
+    top: 45%;
+    background-color: #555;
+    height: .2em;
+    min-height: 1px;
+    z-index: 1;
+}
+
+body {
+    background-color: #344a72;
+    font-family: "Roboto", sans-serif;
+}
+
+.signup-box {
+    width: 360px;
+    height: 620px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.login-box {
+    width: 360px;
+    height: 280px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+h4 {
+    text-align: center;
+}
+
+form {
+    width: 300px;
+    margin-left: 20px;
+}
+
+form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+
+input[type="button"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #49c1a2;
+    color: white;
+    font-size: 18px;
+}
+
+p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.para-2 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.para-2 a {
+    color: #49c1a2;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #344a72;
+}
+
+.contar {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contar>h1 {
+    padding: 20px 0;
+    color: #f3f3f5;
+}
+
+.cart {
+    display: flex;
+}
+
+.products {
+    flex: 0.75;
+}
+
+.product {
+    background-color: #f3f3f5;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid silver;
+    margin-bottom: 20px;
+}
+
+.product>img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product>img:hover {
+    transform: scale(1.04);
+}
+
+.product-info {
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.product-name,
+.product-price,
+.product-offer {
+    margin-bottom: 20px;
+}
+
+.product-remove {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 25px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-remove:hover {
+    background-color: white;
+    color: green;
+    font-weight: 600;
+    border: 1px solid green;
+}
+
+.product-quantity>input {
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+.cart-total {
+    background-color: #f3f3f5;
+    flex: 0.25;
+    margin-left: 20px;
+    padding: 20px;
+    height: 240px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+.cart-total p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.cart-total a {
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: tomato;
+    color: white;
+    text-decoration: none;
+}
+
+.cart-total a:hover {
+    background-color: red;
+}
+
+@media screen and (max-width: 700px) {
+    .remove {
+        display: none;
+    }
+    .product {
+        height: 150px;
+    }
+    .product>img {
+        height: 150px;
+        width: 200px;
+    }
+    .product-name,
+    .product-price,
+    .product-offer {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cart {
+        flex-direction: column;
+    }
+    .cart-total {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+.products-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.products-title {
+    font-size: 2.4em;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.product-box {
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 300ms;
+    margin: 20px 0;
+}
+
+.product-box a {
+    display: block;
+}
+
+.product-box_image {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.product-box_data {
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-box_data h2 {
+    font-size: 2.4em;
+    font-weight: 300;
+    margin: 0;
+}
+
+.product-box_data span {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--green);
+    margin: 0 0 0 10px;
+}
+
+.product-box_data p {
+    font-size: 1.5em;
+    width: 100%;
+    color: var(--gray);
+    margin: 0;
+    height: 0;
+    transition: 300ms;
+    overflow: hidden;
+}
+
+.product-box_data i {
+    color: var(--green);
+    font-size: 1.8em;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+}
+
+.product-box:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.product-box:hover p {
+    height: 40px;
+    margin-top: 15px;
+}
+
+.product-box:hover i {
+    transform: rotate(360deg);
+    box-shadow: 0 0 5px var(--green);
+}
