@@ -1,35 +1,34 @@
-const express = require('express');
-const app = express();
-app.use(express.static('public'));
+// Defino los requirements ssssss
+const express = require('express')
+const app = express()
+const port = process.env.PORT;
+const path = require('path');
 
-// Para acceder a todas las variables de entorno ya creadas
-// process.env
+const indexRoutes = require('./routes/indexRoutes');
+const userRoutes = require('./routes/userRoutes');
+const productsRoutes = require('./routes/productRoutes');
 
-// process.env.PORT
 
-const port = 3000
+app.use(express.static('public')); // Defino a la carpeta public como la que tiene todos los assets
+app.set('view engine', 'ejs'); // Defino a ejs como motor de renderizacion
+app.use(express.urlencoded({ extended: false }));
+const methodOverride = require('method-override'); // Requerimos este módulo para asegurar compatibilidad de métodos PUT y DELETE en todos los navegadores.
+app.use(methodOverride('_method'))
+app.use(express.json());
 
-app.listen(process.env.PORT || port,() => {
-    console.log('Servidor funcionando');
+
+
+app.use('/', indexRoutes); // Rutas de la home pasan a controlarlas indexRoutes
+app.use('/', userRoutes); // Rutas de login y register pasan a controlarlas userRoutes
+app.use('/products', productsRoutes); // Rutas de edit y create pasan a controlarlas userRoutes
+
+// Renderizo la pagina 404 si no identifica la ruta
+app.use((req, res, next) => {
+    res.status(404).render("not-found");
 });
 
-app.get('/', (req,res)=>{
-    res.sendFile(__dirname + '/views/home.html');
-});
 
-app.get('/login', (req,res)=>{
-    res.sendFile(__dirname + '/views/login.html');
-});
 
-app.get('/register', (req,res)=>{
-    res.sendFile(__dirname + '/views/register.html');
+app.listen(port || 3000, () => {
+    console.log('gogogogo en el puerto 3000 de una');
 });
-
-app.get('/description', (req,res)=>{
-    res.sendFile(__dirname + '/views/description.html');
-});
-
-app.get('/productcart', (req,res)=>{
-    res.sendFile(__dirname + '/views/productcart.html');
-});
-
