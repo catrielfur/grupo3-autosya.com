@@ -1,21 +1,28 @@
 const fs = require('fs');
 
-const User = {
+const userModel =
+
+	{
 	fileName: './data/users.json',
 
 	getData: function () {
 		return JSON.parse(fs.readFileSync(this.fileName, 'utf-8'));
 	},
 
+	// Este metodo trae el nuevo id para nuestra alta de usuario
 	generateId: function () {
+		// Traigo todos los usuarios
 		let allUsers = this.findAll();
+		// Extraigo el ultimo de la lista
 		let lastUser = allUsers.pop();
 		if (lastUser) {
+			// El nuevo id va a ser uno mas, que el ultimo de la lista
 			return lastUser.id + 1;
 		}
 		return 1;
 	},
 
+	// Metodo que trae un listado de todos los usuarios
 	findAll: function () {
 		return this.getData();
 	},
@@ -51,6 +58,6 @@ const User = {
 	}
 }
 
-console.log(User.generateId());
 
-module.exports = User;
+module.exports = userModel;
+

@@ -1,52 +1,21 @@
-[
- {
-  "nombre_producto": "ca",
-  "descripcion": "ca",
-  "categoria": "Camionetas",
-  "modelo": "Trajes",
-  "precio": "100000",
-  "descuento": "20",
-  "imagen": "audiq5.jpg",
-  "id": 105
- },
- {
-  "nombre_producto": "we",
-  "descripcion": "we",
-  "categoria": "SubCompactos",
-  "modelo": "Cera",
-  "precio": "100000",
-  "descuento": "50",
-  "imagen": "img-1640216808001.jpg",
-  "id": 106
- },
- {
-  "nombre_producto": "ju",
-  "descripcion": "ju",
-  "categoria": "SubCompactos",
-  "modelo": "Cera",
-  "precio": "100000",
-  "descuento": "10",
-  "imagen": "img-1640216830957.jfif",
-  "id": 107
- },
- {
-  "nombre_producto": "xz",
-  "descripcion": "xz",
-  "categoria": "Compactos",
-  "modelo": "2021",
-  "precio": "100000",
-  "descuento": "20",
-  "imagen": "img-1640217734320.jfif",
-  "id": 108
- },
- {
-  "nombre_producto": "prueba",
-  "descripcion": "1",
-  "categoria": "Camionetas",
-  "modelo": "2021",
-  "imagen": "img-1640567223693.jfif",
-  "precio": "100000",
-  "descuento": "10",
-  "id": "109"
- }
+[{
+        "nombre_producto": "zxxzx",
+        "descripcion": "zxzxzx",
+        "categoria": "Compactos",
+        "modelo": "2021",
+        "precio": "366666",
+        "descuento": "20",
+        "imagen": "img-1642461315493.jpg",
+        "id": 106
+    },
+    {
+        "nombre_producto": "ssss",
+        "descripcion": "ssss",
+        "categoria": "Compactos",
+        "modelo": "2021",
+        "precio": "3333333",
+        "descuento": "33",
+        "imagen": "img-1642462141617.jpg",
+        "id": 107
+    }
 ]

@@ -1,3 +1,20 @@
+## RETROSPECTIVA SPRINT Cinco
+
+### 1. Comenzar a hacer
+-Reuniones fijas una o dos veces por semana -  aunque sean de 15 minutos.
+
+### 2. Hacer más
+- reuniones semanales.
+-invertir mas tiempo al principio que al final del sprint.
+### 3. Continuar haciendo.
+-reuniones para resolver problemas punutales en el codigo.
+-incorporando extensiones colaborativas.
+-mejorando funcionalidades de sprints anteriores.
+### 4. Hacer menos
+
+### 5. Dejar de hacer
+
+
 ## RETROSPECTIVA SPRINT CUATRO
 
 ## Comenzar a hacer
@@ -23,7 +40,7 @@
 ## Dejar de hacer
 * Olvidar hacer push cuando se termina una tarea
 
-## RETROSPECTIVA TRES
+## RETROSPECTIVA sprint TRES
 
 en este 3 sprint cumplimos con la tareas que se pedian en trello organizando de una mejor manera las tareas que cada uno debia cumplir y comunicandonos mas frecuentemente maneniendo a cada miembre del grupo actualizado sobre las tareas diarias
 

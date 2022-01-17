@@ -25,7 +25,7 @@ Vamos a ofrecerle al publico todos los Automoviles posibles de manera que tengam
 
 Juan Ceron: 25 años, Ingeniero en Sistemas. Gamer.
 
-Catriel Furquet: 25 años, Ingeniero en Sistemas. Gamer.
+Catriel Furquet: 25 años, Farmaceutico. Lector.
 
 Bruno Segura: 25 años, Ingeniero en Sistemas. Gamer.
 
