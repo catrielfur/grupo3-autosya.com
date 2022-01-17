@@ -1,21 +1,22 @@
-[{
-        "nombre_producto": "zxxzx",
-        "descripcion": "zxzxzx",
-        "categoria": "Compactos",
-        "modelo": "2021",
-        "precio": "366666",
-        "descuento": "20",
-        "imagen": "img-1642461315493.jpg",
-        "id": 106
-    },
-    {
-        "nombre_producto": "ssss",
-        "descripcion": "ssss",
-        "categoria": "Compactos",
-        "modelo": "2021",
-        "precio": "3333333",
-        "descuento": "33",
-        "imagen": "img-1642462141617.jpg",
-        "id": 107
-    }
+[
+ {
+  "nombre_producto": "zxxzx",
+  "descripcion": "zxzxzx",
+  "categoria": "Compactos",
+  "modelo": "2021",
+  "precio": "366666",
+  "descuento": "20",
+  "imagen": "img-1642461315493.jpg",
+  "id": 106
+ },
+ {
+  "nombre_producto": "ssss",
+  "descripcion": "ssss",
+  "categoria": "Compactos",
+  "modelo": "2021",
+  "precio": "3333333",
+  "descuento": "33",
+  "imagen": "img-1642462141617.jpg",
+  "id": 107
+ }
 ]
