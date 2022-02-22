@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<%- include('../partials/head') %>
+    <title>AUTOS-YA Productos</title>
+    <link rel="stylesheet" href="../../styles/home.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/register.css">
+    </head>
+
+    <body>
+        <%- include('../partials/header') %>
+            <main class="mainbody">
+                <section class="sectionbody">
+                    <h3 class="tituloEdit">Edicion del producto</h3>
+
+                    <form action="/products/<%=  product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+                        <div class="divflex">
+                            <div class="nameProduct">
+                                <label for="name">Nombre:</label>
+                                <input type="text" name="name" id="nombre" value="<%= product.name %>" placeholder="<%= product.name %>" autofocus required>
+                            </div>
+                            <div>
+                                <label for="category">Categoría:</label>
+                                <select name="categories_id" id="categoria" required>
+                                <% categories.forEach(category => { %>
+                                    <% if (category.id == product.category_id) { %>
+                                        <option value="<%= product.category_id %>" selected> <%= product.category.name %> </option>
+                                    <% }else{ %>
+                                        <option value="<%= category.id %>"> <%= category.name %> </option>
+                                   <% } %>
+                                <% }) %>
+                            </select>
+                            </div>
+                            <div>
+                                <label for="brand">Marca:</label>
+                                <select name="brands_id" id="marca" required>
+                                <% brands.forEach(brand => { %>
+                                    <% if (brand.id == product.brand_id) { %>
+                                        <option value="<%= product.brand_id %>" selected> <%= product.brand.name %> </option>
+                                    <% }else{ %>
+                                        <option value="<%= brand.id %>"> <%= brand.name %> </option>
+                                   <% } %>
+                                <% }) %>
+                            </select>
+                            </div>
+                            <div>
+                                <label for="Modelo">Modelo:</label>
+                                <select name="Modelos_id" id="tamaño" required>
+                                <% Modelos.forEach(Modelo => { %>
+                                    <% if (Modelo.id == product.Modelo_id) { %>
+                                        <option value="<%= product.Modelos_id %>" selected> <%= product.Modelo.name %> </option>
+                                    <% }else{ %>
+                                        <option value="<%= Modelo.id %>"> <%= Modelo.name %> </option>
+                                   <% } %>
+                                <% }) %> 
+                            </select>
+                            </div>
+                            <div>
+                                <label for="color">Color:</label>
+                                <select name="colors_id" id="color" required>
+                                <% colors.forEach(color => { %>
+                                    <% if (color.id == product.color_id) { %>
+                                        <option value="<%= product.color_id %>" selected> <%= product.color.name %> </option>
+                                    <% }else{ %>
+                                        <option value="<%= color.id %>"> <%= color.name %> </option>
+                                   <% } %>
+                                <% }) %> 
+                            </select>
+                            </div>
+                            <div>
+                                <label for="description">Descripcion:</label>
+                                <textarea name="description" id="descripcion" rows="5" value="<%= product.description %>" placeholder="<%= product.description %>" required></textarea>
+                            </div>
+                            <div class="field">
+                                <label for="imagen">Imagen</label>
+                                <div class="control">
+                                    <input type="file" name="imagen" id="imagen">
+                                    <input type="hidden" name="oldImagen" id="hiddenImage" value="<%= product.Images[0].file %>">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="price">Precio:</label>
+                                <input type="text" name="price" id="precio" value="<%= product.price %>" placeholder="<%= product.price %>" required>
+                            </div>
+                            <div>
+                                <label for="stock">Cantidad:</label>
+                                <input type="text" name="stock" id="cantidad" value="<%= product.stock %>" placeholder="Cantidad" required>
+                            </div>
+
+                            <div class="divboton">
+                                <button type="submit">Editar producto</button>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="/products/<%= product.id %>?_method=DELETE" method="POST" enctype="multipart/form-data">
+                        <div class="divflex">
+                            <div>
+                                <button type="submit">Eliminar Producto</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </main>
+            <%- include('../partials/footer') %>
+    </body>
+
+</html>
