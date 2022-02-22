@@ -48,7 +48,7 @@ app.use((req, res, next) => {
 
 app.listen(port || 3000, () => {
     console.log('pagina iniciada en el puerto 3000');
-    console.log('en caso de no haber creado la base de datos correr el comando sequelize db:create');
-    console.log('en caso de no haber migrado la base de datos correr el comando sequelize db:migrate');
-    console.log('en caso de no haber importado los datos a la base de datos correr el comando sequelize db:seed:all');
+    console.log('en caso de no haber creado la base de datos correr el comando |sequelize db:create|');
+    console.log('en caso de no haber migrado la base de datos correr el comando |sequelize db:migrate|');
+    console.log('en caso de no haber importado los datos a la base de datos correr el comando |sequelize db:seed:all|');
 });
