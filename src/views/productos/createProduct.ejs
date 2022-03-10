@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+        <title>AUTOS-YA Productos</title>
+        <link rel="stylesheet" href="../styles/register.css">
+        <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+    <%- include('../partials/header') %>
+        <main class="mainbody">
+            <section class="sectionbody">
+                <h3 class="tituloEdit">Creacion del producto</h3>
+
+                <form action="/products/create" method="POST" enctype="multipart/form-data">
+                    <div class="divflex">
+                        <div class="nameProduct">
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="name" id="nombre" placeholder="Nombre" autofocus required>
+                        </div>
+                        <div>
+                            <label for="category">Categoría:</label>
+                            <select name="categories_id" id="categoria" required>
+                                <% categories.forEach(category => { %>
+                                    <option value="<%= category.id %>"> <%= category.name %> </option>
+                                <% }) %>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="brand">Marca:</label>
+                            <select name="brands_id" id="marca" required>
+                                <% brands.forEach(brand => { %>
+                                    <option value="<%= brand.id %>"> <%= brand.name %> </option>
+                                <% }) %>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="Modelo">Tamaño:</label>
+                            <select name="Modelos_id" id="tamaño" required>
+                                <% Modelos.forEach(Modelo => { %>
+                                    <option value="<%= Modelo.id %>"> <%= Modelo.name %> </option>
+                                <% }) %>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="color">Color:</label>
+                            <select name="colors_id" id="color" required>
+                                <% colors.forEach(color => { %>
+                                    <option value="<%= color.id %>"> <%= color.name %> </option>
+                                <% }) %>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="description">Descripcion:</label>
+                            <textarea name="description" id="descripcion" rows="5" placeholder="Descripcion" required></textarea>
+                        </div>
+                        <div>
+                            <label for="imagen">Imagen</label>
+                            <input type="file" name="imagen" id="imagen">
+                        </div>
+                        <div>
+                            <label for="price">Precio:</label>
+                            <input type="text" name="price" id="precio" placeholder="Precio" required>
+                        </div>
+                        <div>
+                            <label for="stock">Cantidad:</label>
+                            <input type="text" name="stock" id="cantidad" placeholder="Cantidad" required>
+                        </div>
+                        <!-- <div>
+                            <label for="descuento">descuento</label>
+                            <input type="text" name="descuento">
+                        </div> -->
+                        <div class="divboton">
+                            <button type="submit">Crear producto</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <%- include('../partials/footer') %>
+</body>
+
+</html>
