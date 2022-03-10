@@ -1,4 +1,5 @@
-# Retro del Sprint 6
+
+## RETROSPECTIVA SPRINT SEIS
 
 ### 1. Comenzar a hacer
 resolucion de tareas dificiles en grupo
@@ -11,7 +12,8 @@ Usar trello
 
 ### 5. Dejar de hacer
 
-# Retro del Sprint 5
+
+## RETROSPECTIVA SPRINT CINCO
 
 ### 1. Comenzar a hacer
 -Reuniones fijas una o dos veces por semana -  aunque sean de 15 minutos.
@@ -28,90 +30,39 @@ Usar trello
 ### 5. Dejar de hacer
 
 
-# Retro del Sprint 4
+## RETROSPECTIVA SPRINT CUATRO
 
-### 1. Comenzar a hacer
-- Abrir branches por tarea
+## Comenzar a hacer
+* Implementación de Crud
+* Cración de formularios
+* Conexión de la página y base de datos
 
-### 2. Hacer más
-- Comentar el codigo
+## Hacer más
+* Implementar los partials
+* Consultar más funcionalidades que le aporten a la página
+* Trabajar sincrónicamente
 
-### 3. Continuar haciendo.
+## Continuar haciendo
+* Creación de archivos json
+* Correciones necesarias a la página
+* Cambios de estilo
+* Realizar los dailys
+* Optimizar el código
 
-### 4. Hacer menos
+## Hacer menos
+* Dejar código comentado que no se va a utilizar
 
-### 5. Dejar de hacer
+## Dejar de hacer
+* Olvidar hacer push cuando se termina una tarea
 
----
-# Retro del Sprint 3
+## RETROSPECTIVA TRES
 
-### 1. Comenzar a hacer
-Organizar las tareas prioritarias que comprometen a otras, creando prioridades en el Trello. (+1 Fer)
-### 2. Hacer más
-Hacer la mayor parte del sprint la primera semana.
-Mejor comunicacion cuando tomamos una tarea.
-Tirar en cualquier momento la de "che, voy a meterle un rato, si alguno esta al pedo chifle"
-Self service de tareas de trello
-### 3. Continuar haciendo.
-Dos reuniones semanales.
-Utilizar el trello para organizar el trabajo.
-Distribuyendo las tareas entre todos en forma equitativa. 
-Comunicandonos por Slack.
-Pidiendo ayuda cuando nos trabamos.
-### 4. Hacer menos
+en este 3 sprint cumplimos con la tareas que se pedian en trello organizando de una mejor manera las tareas que cada uno debia cumplir y comunicandonos mas frecuentemente maneniendo a cada miembre del grupo actualizado sobre las tareas diarias
 
-### 5. Dejar de hacer
-Esperar a que nos asignen un ticker en trello para tomar tareas.
+## RETROSPECTIVA SPRINT DOS
 
----
+como equipo consideramos que por ser la primera vez que trabajamos en un proyecto de este tipo surgieron varios problemas relacionados con la comunicacion y la asignacion de tareas, ademas hay algunas cosas que nos cuestan mucho como por ejemplo el manejo de los estilos css y su interaccion con los elementos en las paginas de html, independientemen de esto no podemos negar que a pesar de las difucultades este proyecto nos ha obligado a hacernos preguntas que amplian nuestro conocimiento sobre diferentes tecnicas, estilos, diseños y elementos que en el futuro hará que nuestro tenga mas calidad.
 
-# Retro del Sprint 2
+Para terminar consideramos que algo que definitivamente debemos mejorar es la division y asignacion de tareas.
 
-### 1. Comenzar a hacer
-- Pushear mas seguido a Git y push mas cortos.
-- Pullear siempre que nos sentamos.
-- Avisar cuando estamos por pushear o pullear
-
-### 2. Hacer más
-- Tener mas clara la planificacion antes de tirar codigo.
-- Alinearse mas en equipo.
-- Pedir ayuda cuando no nos sale algo.
-
-### 3. Continuar haciendo.
-- Weekly
-- Buena comunicacion por slack
-
-### 4. Hacer menos
-- Mandarnos solos
-
-### 5. Dejar de hacer
-
----
-
-# Retro del Sprint 1
-
-### 1. Comenzar a hacer
-- Videollamada corta una vez por sprint
-- Memes por el grupo
-- Antes de empezar con lo que me tocó, revisar el todo
-
-### 2. Hacer más
-- Hablar mas por el slack
-- Animarse a pedir ayuda
-- Reportar updates mas seguido
-- Revision entre pares
-- Hablar mas de la estetica de css que tendra el proyecto en todos sos niveles
-
-
-### 3. Continuar haciendo.
-- Pushear cada uno a su branch
-- hacer un pull request antes de empezar.
-- Equilibrio de taraes, Dejar que todos aporten independientemente del nivel de programacion que tengan.
-- Aprender de los errores, y mejorar a partir de estos.
-
-### 4. Hacer menos
-- commits con poco detalle de lo que se realizó
-- Dejar parte del trabajo para los ultimos dias cuando se puede realizar antes
-
-### 5. Dejar de hacer
-- Que el líder tenga que tener siempre la iniciativa, ayudarlo entre todos a llevar a cabo los objetivos.
+Para el proximo sprint consideramos que tenemos que generar un buena division de tareas para que cada uno se encargue de una tarea en especifico sin afectar el codigo de otro.

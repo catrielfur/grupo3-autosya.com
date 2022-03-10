@@ -10,7 +10,7 @@
 
 <body>
     <nav>
-        <h3>Waverunners</h3>
+        <h3>Autos Ya</h3>
         <ul>
             <li><a href="/admin"><i class="fas fa-archive"></i>Productos</a></li>
             <li style="opacity: 50%"><a href="/admin/users"><i class="fas fa-user"></i>Usuarios</a></li>
@@ -19,40 +19,42 @@
     </nav>
     <main>
         <%- include('../partials/indicators') %>
-        <div class="filters">
-            <a href="/products/create">
-            <button><i class="fas fa-plus-circle"></i>Crear Nuevo Producto</button>
-        </a>
-        </div>
-        <table>
-            <tr>
-                <th>Articulo</th>
-                <th>Precio</th>
-                <th>Descuento</th>
-                <th></th>
-            </tr>
-            <% products.forEach(product=> { %>
-                <!--<%- include('../partials/product', { product }) %>-->
+            <div class="filters">
+                <a href="/products/create">
+                    <button><i class="fas fa-plus-circle"></i>Crear Nuevo Producto</button>
+                </a>
+            </div>
+            <table>
                 <tr>
-                    <td>
-                        <a href="/products/<%= product.id %>" class="td-flex-container">
+                    <th>Articulo</th>
+                    <th>Precio</th>
+                    <th>Descuento</th>
+                    <th></th>
+                </tr>
+                <% products.forEach(product=> { %>
+                    <!--<%- include('../partials/product', { product }) %>-->
+                    <tr>
+                        <td>
+                            <a href="/products/<%= product.id %>" class="td-flex-container">
                             <div class="product-img"
                                 style="background-image: url('/images/producto/<%= product.imagen %>');"></div>
                             <%= product.nombre_producto %>
                         </a>
-                    </td>
-                    <td>
-                        $<%= product.precio.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "," ) %>
-                    </td>
-                    <td>
-                        $<%= product.descuento.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "," ) %>
-                    </td>
-                    <td>
-                        <a href="/products/<%= product.id %>/edit"><i class="fas fa-edit"></i></a>
-                    </td>
-                </tr>
-                <% })%>
-        </table>
+                        </td>
+                        <td>
+                            $
+                            <%= product.precio.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "," ) %>
+                        </td>
+                        <td>
+                            $
+                            <%= product.descuento.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "," ) %>
+                        </td>
+                        <td>
+                            <a href="/products/<%= product.id %>/edit"><i class="fas fa-edit"></i></a>
+                        </td>
+                    </tr>
+                    <% })%>
+            </table>
     </main>
 </body>
 

@@ -1,52 +1,43 @@
 # Trabajo practico curso desarrollo full stack digital house
 
-**Integrantes:** [@ferminrp](https://github.com/ferminrp/), [@PedroSzyk](https://github.com/PedroSzyk/), [@santiagoane](https://github.com/santiagoane/), [@Joacoaldun](https://github.com/Joacoaldun/)
+**Integrantes:** JUAN CERON, CATRIEL FURQUET, BRUNO SEGURA, FRANCO GIORGI
 
-Trello: https://trello.com/b/oBFdc0sQ/wave-runners
+Trello: https://trello.com/b/8ln4UpAT/proyecto-grupal-dh
 
 **Descripción de la oferta de productos:**
 
-Plataforma de venta de todo tipo de productos deportivos acuáticos.
+Plataforma de venta de todo tipo de Automoviles.
 
-Productos: Tablas, velas, kayaks,  mástiles, barras, trajes de neoprene, accesorios.
+Productos: Carros compactos, Camionetas, Deportivos, Subarus, Etc.
 
 **Descripción del público:**
 
-- Deportistas de deportes acuáticos de todas las edades (a partir de los 9 años)
 - Argentinos (envio a todo el país)
-- Principiantes o avanzados
 - Alto poder adquisitivo
-- Compra de artículos nuevos no usados
+- Compra de Autos nuevos o usados
 
 **¿Cómo ajustaremos nuestra oferta a ese público?**
 
-Vamos a ofrecerle todos los equipos que el deportista necesita para poder realizar su deporte, segmentando por rangos de precio, edades y niveles de experiencia.
+Vamos a ofrecerle al publico todos los Automoviles posibles de manera que tengamos el mayor alcance posible.
 
 
 **Descripción integrantes del equipo:**
 
-Fermin: 24 años, Administrador de Empresas. Fan de la birra.
+Juan Ceron: 25 años, Ingeniero en Sistemas. Gamer.
 
-Pedro: 25 años, Empleado de comercio.  Gamer.
+Catriel Furquet: 25 años, Ingeniero en Sistemas. Gamer.
 
-Joaco: 28 años, Empleado de comercio. Hincha de River.
+Bruno Segura: 25 años, Ingeniero en Sistemas. Gamer.
 
-Santi: 28 años,  Contador, emprendedor. Kitero. 
+Franco Giorigi: 25 años, Ingeniero en Sistemas. Gamer.
 
 **Referentes en distintos mercados:**
 
-- [https://www.mackiteboarding.com/](https://www.mackiteboarding.com/)
-- [https://www.hardwind.com/](https://www.hardwind.com/)
-- [https://www.baron.com.ar/](https://www.baron.com.ar/)
-- [https://garmin.com.ar/](https://garmin.com.ar/)
-- [https://www.farfetch.com/ar/](https://www.farfetch.com/ar/)
-- [https://www.craftsociety.com.ar/](https://www.craftsociety.com.ar/)
-- [https://siempreencasa.com.ar/](https://siempreencasa.com.ar/)
-- [https://www.garmin.com/en-US/](https://www.garmin.com/en-US/)
-- [https://www.head.com/en_US/home](https://www.head.com/en_US/home)
-- [https://www.reebok.com.ar/](https://www.reebok.com.ar/)
-- [https://drifters.com.ar/](https://drifters.com.ar/)
-- [https://www.digitalsport.com.ar/](https://www.digitalsport.com.ar/)
+- https://www.kavak.com/ar/solicitud-credito
+- https://articulo.tucarro.com.co/MCO-575550481-citron-c-elysee-feel-16-mecanico-2022-_JM#promoted-items-new=0
+- https://www.domautomoviles.com.ar/tienda/
+- https://carmak.com.ar/
+- https://www.deautos.com/
 
-# DH-LaBandagrupo2-Sprint2
-Probando el GIT 
+
+# DH-GRUPO3-AUTOYA-Sprint 6
