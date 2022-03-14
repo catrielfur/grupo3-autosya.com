@@ -1,4 +1,4 @@
-//Definamos el Bcrypt
+//Definamos el Bcrypt.
 const bcryptjs = require('bcryptjs');
 // ESTO SERIA EL GESTOR DEL MODELO
 const db = require('../database/models');
