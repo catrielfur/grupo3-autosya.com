@@ -1,0 +1,39 @@
+{
+    "name": "sprint7",
+    "version": "1.0.0",
+    "description": "**Integrantes:** JUAN CERON, CATRIEL FURQUET, BRUNO SEGURA, FRANCO GIORGI",
+    "main": "app.js",
+    "scripts": {
+        "dev": "nodemon src/app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/catrielfur/grupo3-autosya.com"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/catrielfur/grupo3-autosya.com"
+    },
+    "homepage": "https://github.com/catrielfur/grupo3-autosya.com",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cookie-parser": "^1.4.5",
+        "dotenv": "^10.0.0",
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "express-session": "^1.17.2",
+        "express-validator": "^6.12.0",
+        "fs": "0.0.1-security",
+        "method-override": "^3.0.0",
+        "multer": "^1.4.2",
+        "mysql2": "^2.2.5",
+        "nodemon": "^2.0.12",
+        "path": "^0.12.7",
+        "sequelize": "^6.6.5"
+    },
+    "keywords": [],
+    "devDependencies": {
+        "sequelize-cli": "^6.2.0"
+    }
+}

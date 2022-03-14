@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+        <title>Autos Ya</title>
+        <link rel="stylesheet" href="../styles/register.css">
+        <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+    <%- include('../partials/header') %>
+        <main class="mainbody">
+            <section class="sectionbody">
+                <h3 class="tituloEdit">Creacion del producto</h3>
+
+                <form action="/products/create" method="POST" id="form.formulario" enctype="multipart/form-data">
+                    <div class="divflex">
+                        <div class="nameProduct">
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="name" id="nombre" placeholder="nombre" autofocus value="<%= locals.oldData ? oldData.name : null %>">
+                            <span class="Feedback"></span>
+                            <% if (locals.errors && errors.name) { %>
+                                <p class="inputError">
+                                    <%= errors.name.msg  %>
+                                </p>
+                                <% } %>
+                        </div>
+                        <div>
+                            <label for="category">Categoría:</label>
+                            <select name="categories_id" id="categoria">
+                                <% categories.forEach(category => { %>
+                                    <option value="<%= category.id %>"> <%= category.name %> </option>
+                                <% }) %>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="brand">Marca:</label>
+                            <select name="brands_id" id="marca">
+                                <% brands.forEach(brand => { %>
+                                    <option value="<%= brand.id %>"> <%= brand.name %> </option>
+                                <% }) %>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="Modelo">Tamaño:</label>
+                            <select name="Modelos_id" id="tamaño" required>
+                                <% Modelos.forEach(Modelo => { %>
+                                    <option value="<%= Modelo.id %>"> <%= Modelo.name %> </option>
+                                <% }) %>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="color">Color:</label>
+                            <select name="colors_id" id="color">
+                                <% colors.forEach(color => { %>
+                                    <option value="<%= color.id %>"> <%= color.name %> </option>
+                                <% }) %>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="description">Descripcion:</label>
+                            <textarea name="description" id="descripcion" rows="5" placeholder="Descripcion" value="<%= locals.oldData ? oldData.name : null %>"></textarea>
+                            <span class="Feedback"></span>
+                            <% if (locals.errors && errors.description) { %>
+                                <p class="inputError">
+                                    <%= errors.description.msg  %>
+                                </p>
+                                <% } %>
+                        </div>
+                        <div>
+                            <label for="imagen">Imagen:</label>
+                            <input type="file" name="imagen" id="imagen">
+                            <span class="Feedback"></span>
+                            <% if (locals.errors && errors.imagen) { %>
+                                <p class="inputError">
+                                    <%= errors.imagen.msg  %>
+                                </p>
+                                <% } %>
+                        </div>
+                        <div>
+                            <label for="price">Precio:</label>
+                            <input type="text" name="price" id="precio" placeholder="Precio" value="<%= locals.oldData ? oldData.price : null %>">
+                            <span class="Feedback"></span>
+                            <% if (locals.errors && errors.price) { %>
+                                <p class="inputError">
+                                    <%= errors.price.msg  %>
+                                </p>
+                                <% } %>
+                        </div>
+                        <div>
+                            <label for="stock">Cantidad de Stock:</label>
+                            <input type="text" name="stock" id="cantidad" placeholder="Stock" value="<%= locals.oldData ? oldData.stock : null %>">
+                            <span class="Feedback"></span>
+                            <% if (locals.errors && errors.stock) { %>
+                                <p class="inputError">
+                                    <%= errors.stock.msg  %>
+                                </p>
+                                <% } %>
+                        </div>
+                        <div class="divboton">
+                            <button type="submit">Crear producto</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <%- include('../partials/footer') %>
+            <script src="/js/frontCreateEditValidation.js"></script>
+</body>
+
+</html>
