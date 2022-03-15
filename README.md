@@ -2,7 +2,7 @@
 
 **Integrantes:** JUAN CERON, CATRIEL FURQUET, BRUNO SEGURA, FRANCO GIORGI
 
-Trello: https://trello.com/b/8ln4UpAT/proyecto-grupal-dh
+Trello: https://trello.com/b/5art1Dva/sprint-8
 
 **Descripción de la oferta de productos:**
 
