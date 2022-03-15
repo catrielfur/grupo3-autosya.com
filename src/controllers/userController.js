@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 //Definamos el Bcrypt.
+=======
+//Definamos el Bcrypt
+>>>>>>> 3a78ffd93518d5a0451ecfbe7dab92c34278d23d
 const bcryptjs = require('bcryptjs');
 // ESTO SERIA EL GESTOR DEL MODELO
 const db = require('../database/models');
