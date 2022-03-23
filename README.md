@@ -4,9 +4,6 @@
 
 <<<<<<< HEAD
 Trello: https://trello.com/b/5art1Dva/sprint-8
-=======
-Trello: https://trello.com/b/8ln4UpAT/proyecto-grupal-dh
->>>>>>> 3a78ffd93518d5a0451ecfbe7dab92c34278d23d
 
 **Descripción de la oferta de productos:**
 

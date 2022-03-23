@@ -11,6 +11,9 @@ const methodOverride = require('method-override');
 const indexRoutes = require('./routes/indexRoutes'); // Ruta para la home
 const userRoutes = require('./routes/userRoutes'); // Ruta para usuarios
 const productsRoutes = require('./routes/productRoutes'); // Rutas de producto
+const apiUserRoutes = require('./routes/api/userRoutes') // Ruta para API usuarios
+const apiProductsRoutes = require('./routes/api/productRoutes'); // Rutas API de producto
+
 //const adminRoutes = require('./routes/adminRoutes');     // Rutas de backoffice
 
 
@@ -22,8 +25,8 @@ app.set('views', path.join(__dirname, '/views'));
 app.use(express.static(path.join(__dirname, '../public'))); // Defino a la carpeta public como la que tiene todos los assets
 app.set('view engine', 'ejs'); // Defino a ejs como motor de renderizacion
 app.use(express.urlencoded({ extended: false }));
-app.use(methodOverride('_method'))
 app.use(express.json());
+app.use(methodOverride('_method'))
 app.use(cookies());
 app.use(session({
     secret: "Shhh, It's a secret",
@@ -36,6 +39,9 @@ app.use(userLoggedMiddleware); // Activo el userLoggedMiddleware
 app.use('/', indexRoutes); // Rutas de la home pasan a controlarlas indexRoutes
 app.use('/', userRoutes); // Rutas de login y register pasan a controlarlas userRoutes
 app.use('/products', productsRoutes); // Rutas de edit y create pasan a controlarlas userRoutes
+app.use('/api/users', apiUserRoutes); // Rutas de login y register pasan a controlarlas API userRoutes
+//app.use('/api/products', apiProductsRoutes); // Rutas de edit y create pasan a controlarlas userRoutes
+
 //app.use('/admin', adminRoutes);
 
 

@@ -60,6 +60,7 @@ let productController = {
         }
 
     },
+    
     // Función que simula el almacenamiento, en este caso en array
 
     store: async(req, res) => {

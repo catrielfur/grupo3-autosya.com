@@ -34,10 +34,6 @@
     },
     "keywords": [],
     "devDependencies": {
-        "sequelize-cli": "^6.2.0"
+        "sequelize-cli": "^6.4.1"
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 3a78ffd93518d5a0451ecfbe7dab92c34278d23d
