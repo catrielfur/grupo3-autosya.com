@@ -12,15 +12,6 @@ const apiProductController = require(path.resolve(__dirname,'../../controllers/a
 
 
 router.get('/', apiProductController.products);
-/*  router.get('/create', productController.create);
-// router.get('/cart', productController.cart);
-router.get('/search', productController.search);
-router.get('/:id', productController.show);
-router.get('/:id/edit', productController.edit);
 
-router.post('/create', upload.single('imagen'), validationProduct, productController.store); 
-router.put('/:id', upload.single('imagen'), validationProduct, productController.update);
-router.delete('/:id', productController.destroy);
 
 module.exports = router;
- */

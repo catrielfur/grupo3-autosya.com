@@ -13,8 +13,6 @@ const {
 	validationResult
 } = require('express-validator');
 
-
-
 const apiUsersController = {
     'profile': (req, res) => {
         db.User.findAll()  
@@ -26,7 +24,6 @@ const apiUsersController = {
                         total: users.length,
                         url: "api/users"
 
-
                     },
                     data: users
 
@@ -37,15 +34,15 @@ const apiUsersController = {
 
     
     'detail': (req, res) => {
-        db.Genre.findByPk(req.params.id)
-            .then(genre => {
+        db.users.findByPk(req.params.id)
+            .then(users => {
                 res.status(200).json({
                     meta:{
                         status: 200,
                         total: 1,
-                        url: `api/genres/detail/${req.params.id}`
+                        url: `api/users/${req.params.id}`
                     },
-                    data:genre
+                    data: detail
                 
             });
     })

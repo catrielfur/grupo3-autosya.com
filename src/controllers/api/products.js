@@ -6,11 +6,33 @@ const { Op } = require("sequelize");
 const { log } = require('console');
 
 
-
-let apiProductController = {
+const apiProductController = {
 
     products: function (req, res) {
-        db.Products.findAll()
+        db.products.findAll()
+        .product(
+            {
+                ...req.body
+            }
+        )
+    .then(product => {
+            res.status(200).json({
+                meta:{
+                    status: 200,
+                    total: products.length,
+                    url: "api/products"
+                },
+                data:product
+            })
+        })
+        .catch(error => res.send(error).status(500))
+    }
+}
+
+/* let apiProductController = {
+
+    products: function (req, res) {
+        db.products.findAll()
     .then(product => {
             res.status(200).json({
                 meta:{
@@ -22,14 +44,11 @@ let apiProductController = {
             })
         })
     }
-}
+} */
 
 
 
 module.exports = apiProductController;
-  
-    
-
 
 
 

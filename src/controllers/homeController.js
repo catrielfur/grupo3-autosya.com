@@ -10,5 +10,8 @@ module.exports = {
     },
     register: (req, res) => {
         res.render('users/register')
+    },
+    error404: (req, res) => {
+        res.render('#')
     }
 };
