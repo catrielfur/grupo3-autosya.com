@@ -6,13 +6,15 @@ const path = require('path');
 const cookies = require('cookie-parser');
 const session = require('express-session');
 const methodOverride = require('method-override');
+const cors = require('cors');
 
 // Llamo las distintas rutas que vamos a usar
 const indexRoutes = require('./routes/indexRoutes'); // Ruta para la home
 const userRoutes = require('./routes/userRoutes'); // Ruta para usuarios
 const productsRoutes = require('./routes/productRoutes'); // Rutas de producto
 const apiUserRoutes = require('./routes/api/userRoutes') // Ruta para API usuarios
-const apiProductsRoutes = require('./routes/api/productRoutes'); // Rutas API de producto
+const apiProductRoutes = require('./routes/api/productRoutes'); // Rutas API de producto
+const apiCategoriesRoutes = require('./routes/api/categoriesRoutes'); // Rutas API de categorias
 
 //const adminRoutes = require('./routes/adminRoutes');     // Rutas de backoffice
 
@@ -34,14 +36,20 @@ app.use(session({
     saveUninitialized: false,
 }));
 app.use(userLoggedMiddleware); // Activo el userLoggedMiddleware
-
+app.use(cors());
 
 app.use('/', indexRoutes); // Rutas de la home pasan a controlarlas indexRoutes
 app.use('/', userRoutes); // Rutas de login y register pasan a controlarlas userRoutes
 app.use('/api/users', apiUserRoutes); // Rutas de login y register pasan a controlarlas API userRoutes
-app.use('/api/users/:id', apiUserRoutes); // Rutas de login y register pasan a controlarlas API userRoutes
+app.use('/api/users/detail/:id', apiUserRoutes); // Rutas de login y register pasan a controlarlas API userRoutes
 app.use('/products', productsRoutes); // Rutas de edit y create pasan a controlarlas userRoutes
-app.use('/api/products', apiProductsRoutes); // Rutas de edit y create pasan a controlarlas userRoutes
+app.use('/api/products', apiProductRoutes); // Rutas de edit y create pasan a controlarlas userRoutes
+app.use('/api/products/detail/:id', apiProductRoutes); // Rutas de edit y create pasan a controlarlas userRoutes
+app.use('/api/products/create', apiProductRoutes); // Ruta create pasa a controlarlas userRoutes
+app.use('/api/products/delete', apiProductRoutes); // Ruta delete pasa a controlarlas userRoutes
+app.use('/api/products/', apiProductRoutes); // Ruta search pasan a controlarlas userRoutes
+app.use('/api/categories', apiCategoriesRoutes); // Rutas de categories pasa a controlarla categoriesRoutes
+
 
 //app.use('/admin', adminRoutes);
 

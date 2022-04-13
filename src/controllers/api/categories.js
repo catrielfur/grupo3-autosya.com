@@ -7,27 +7,27 @@ const { Op } = require("sequelize");
 //const path = require('path');
 
 
-const apiUsersController = {
-    'profile': (req, res) => {
-        db.User.findAll()  
-            .then(users => {
+const apiCategoriesController = {
+    'categories': (req, res) => {
+        db.Category.findAll() 
+            .then(categories => {
                 //poner un status(200) es una buena práctica.
                 res.status(200).json({
                     meta:{
                         status: 200,
-                        total: users.length,
-                        url: "api/users"
+                        total: categories.length,
+                        url: "api/categories"
 
                     },
-                    data: users
+                    data: categories
 
 
             })
             })
-        },
+        }
 
     
-    'detail': (req, res) => {
+/*     'detail': (req, res) => {
         db.User.findByPk(req.params.id)
             .then(users => {
                 res.status(200).json({
@@ -40,10 +40,8 @@ const apiUsersController = {
                 
             });
     })
-
+ */
 }
 
-}
 
-
-module.exports = apiUsersController;
+module.exports = apiCategoriesController;

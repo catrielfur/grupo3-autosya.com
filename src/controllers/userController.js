@@ -152,7 +152,7 @@ let userController = {
 		console.log(userLogged)
 		return res.render('users/profile', {
 			user: userLogged
-		});
+		})
 
 	},
 	logout: (req, res) => {
